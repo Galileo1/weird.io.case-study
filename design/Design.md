@@ -34,7 +34,9 @@ This section provides a summary of run time platform for spring cloud data flow.
     * Kubernetes (minikube cluster locally)
     * Local
 
-![Kubernetes Deployment](/design/images/Kubernetes deployment of spring cloud dataflow platform.png?raw=true)
+![Kubernetes Deployment](images/Kubernetes_deployment_of_spring_cloud_dataflow_platform.png)
+
+![Minikube Cluster Dashboard](images/Kubernetes(minikube)_Dashboard.png)
 
 # Application
 
