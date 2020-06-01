@@ -53,3 +53,7 @@ This section provides a summary of run time platform for spring cloud data flow.
 # Application
 
 Source (http) -> Transform -> Sink(log)
+
+![Channel Through And Latency for Messages](images/ChannelThroughPutAndLatency.png)
+
+![Transformed data in the log Sink](images/TransformedDataInLogSink.png)
