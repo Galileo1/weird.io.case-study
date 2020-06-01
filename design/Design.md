@@ -38,6 +38,18 @@ This section provides a summary of run time platform for spring cloud data flow.
 
 ![Minikube Cluster Dashboard](images/Kubernetes(minikube)_Dashboard.png)
 
+![Source, Transform, Sink Apps Registered](images/source-transform-sink_apps_registered.png)
+
+![Stream Name Lame Created and deployed](images/lameStreamDeployedDashboard.png)
+
+![Steams running as pods in Kubernetes](images/source-transform-sink_stream_deployed.png)
+
+![Grafana Dashboard showing system status](images/GrafanaDashboardShowingSystemStatus.png)
+
+![Runtime Dashboard](images/Runtimeappondashboard.png)
+
+![Minikube cluster throtelling](images/Minikubeclusterthroteling.png)
+
 # Application
 
 Source (http) -> Transform -> Sink(log)
