@@ -39,11 +39,11 @@ spec:
           initialDelaySeconds: 45
         resources:
           limits:
-            cpu: 1.0
+            cpu: 0.5
             memory: 1024Mi
           requests:
             cpu: 0.5
-            memory: 640Mi
+            memory: 600Mi
         env:
         - name: SPRING_CLOUD_CONFIG_ENABLED
           value: 'false'

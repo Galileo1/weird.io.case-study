@@ -10,8 +10,6 @@ services:
     ports:
       - "5672:5672"
       - "15672:15672"
-    volumes:
-      - "./enabled_plugins:/etc/rabbitmq/enabled_plugins"
   mysql:
     image: mysql:5.7.25
     container_name: dataflow-mysql
@@ -36,7 +34,6 @@ services:
       - spring.cloud.dataflow.grafana-info.url=http://localhost:3000
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=rootpw
-      - spring.cloud.dataflow.applicationProperties.stream.spring.rabbitmq.host=rabbitmq
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/dataflow
       - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.mariadb.jdbc.Driver
     ports:
@@ -100,5 +97,3 @@ services:
     container_name: grafana
     ports:
       - '3000:3000'
-volumes:
-  scdf-targets:

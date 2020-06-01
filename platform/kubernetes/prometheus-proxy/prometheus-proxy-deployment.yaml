@@ -26,11 +26,11 @@ spec:
               containerPort: 7001
           resources:
             limits:
-              cpu: 1.0
-              memory: 2048Mi
+              cpu: 600m
+              memory: 500Mi
             requests:
               cpu: 0.5
-              memory: 1024Mi
+              memory: 500Mi
       securityContext:
         fsGroup: 2000
         runAsNonRoot: true
