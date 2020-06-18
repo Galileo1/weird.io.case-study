@@ -31,7 +31,7 @@ data:
                         host: prometheus-proxy
                         port: 7001
           grafana-info:
-            url: 'http://192.168.99.102:30255'
+            url: 'http://192.168.99.103:31936'
           task:
             platform:
               kubernetes:

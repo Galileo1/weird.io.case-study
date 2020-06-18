@@ -31,12 +31,12 @@ spec:
           httpGet:
             path: /management/health
             port: 80
-          initialDelaySeconds: 45
+          initialDelaySeconds: 180
         readinessProbe:
           httpGet:
             path: /management/info
             port: 80
-          initialDelaySeconds: 45
+          initialDelaySeconds: 180
         resources:
           limits:
             cpu: 0.5
