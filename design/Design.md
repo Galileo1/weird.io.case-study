@@ -54,6 +54,15 @@ This section provides a summary of run time platform for spring cloud data flow.
 
 Source (http) -> Transform -> Sink(log)
 
+## SOURCE MICROSERVICE  
+Springboot application that uses reactive stream java DSL to poll the data from finnhub.io (https://finnhub.io/api/v1/quote?symbol=AAPL&token=) with a fixed interval of 1 sec and routes it to Source.OUTPUT
+
+## PROCESSOR MICROSERVICE  
+Springboot application that uses reactive stream java DSL to receive data from INBOUND channel and transforms it before putting it on to the OUTBOUND Channel.
+
+## SINK MICROSERVICE
+Springboot application that uses the reactive stram java DSL to receive the transformed data putting it into JDBC sink. The reason for choosing the JDBC sink is because the requirement is more kind of fits into db queryable format example `Select rates from quotes where timestamp between <> and <>`
+
 ![Channel Through And Latency for Messages](images/ChannelThroughPutAndLatency.png)
 
 ![Transformed data in the log Sink](images/TransformedDataInLogSink.png)
