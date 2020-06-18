@@ -8,7 +8,7 @@ This repo contains the explaination for the design and architecture of applicati
 
 For kubernetes deployment you need to first create the cluster: 
 
-We have also successfully deployed cluster using [Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/).
+We have successfully deployed cluster using [Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/).
 
 ## Start the minikube cluster 
 
